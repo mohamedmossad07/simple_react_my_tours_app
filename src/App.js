@@ -41,7 +41,7 @@ function removeTour(id){
     );
   }
   // if tours ==0 refetch tours
-  if(tours.length==0){
+  if(tours.length===0){
     return (<div className="title">
         <h2>No tours left </h2>
         <button className="btn" onClick={fetchTours}>Refetch tours</button>
